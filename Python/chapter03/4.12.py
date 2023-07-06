@@ -1,0 +1,11 @@
+sign=1
+t=1.0
+n=1.0
+pi=0.0
+while(abs(t)>=1e-6):
+    pi=pi+t
+    n=n+2
+    sign= -sign
+    t=sign/n
+pi=pi*4
+print("pi=%10.6f"%pi)
